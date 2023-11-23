@@ -1,0 +1,3 @@
+17.10.23 - Pomysł
+17.10.23 - Wstępny Form logowania i rejestracji
+17.10.23 - Zrobienie bazy danych

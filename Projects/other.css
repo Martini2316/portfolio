@@ -1,0 +1,95 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap');
+
+body {
+    font-family: 'Poppins', sans-serif;
+    background: rgb(10, 64, 48);
+}
+
+::-webkit-scrollbar {
+    width: 12px;
+}
+::-webkit-scrollbar-thumb{
+    background-color: white;
+    border-radius: 6px;
+}
+::-webkit-scrollbar-track{
+    background-color: rgb(49, 47, 47);
+}
+
+.portfolio-container{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 2%;
+}
+
+.project {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    background-color: rgba(102, 198, 195, 0.61);
+    border-radius: 10px;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    padding: 10px;
+    border: 2px solid rgba(255, 255, 255, 0.236);
+}
+
+.project img{
+    height: 14rem;
+    object-fit: cover;
+    border-radius: 10px;
+}
+
+.project-action{
+    display: flex;
+    align-items: center;
+    gap: 2rem;
+}
+
+.btn{
+    display: inline-block;
+    width: fit-content;
+    font-size: 19px;
+    font-weight: 500;
+    padding: 14px 32px;
+    border-radius: 30px;
+    background: rgb(81, 185, 81);
+    border: none;
+    color: white;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.4);
+    text-decoration: none;
+}
+
+section{
+    padding: 6rem;
+}
+
+.container{
+    width: 90%;
+    max-width: 1420px;
+    margin: 0px auto;
+}
+
+.btn:hover{
+    background: rgb(46, 110, 46);
+    color: white;
+    text-decoration: none;
+    box-shadow: none;
+    cursor: pointer;
+}
+
+.project-action .btn{
+    border-radius: 10px;
+    margin-bottom: 1rem;
+}
+
+h4{
+    font-size: 24px;
+    color: white;
+}
+
+p {
+    color: white;
+}
+

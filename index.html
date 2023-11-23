@@ -1,0 +1,316 @@
+<!DOCTYPE html>
+<html lang="pl-PL">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Martin Schneider</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="media.css">
+</head>
+<body>
+    <nav id="desktop-nav">
+        <div class="logo"><span style="color: white;">Martin Schneider</span></div>
+        <div>
+            <ul class="nav-links">
+                <li><a href="#about"><span style="color: white;">O mnie</span></a></li>
+                <li><a href="#experience"><span style="color: white;">Doświadczenie</span></a></li>
+                <li><a href="#projects"><span style="color: white;">Projekty</span></a></li>
+                <li><a href="#contact"><span style="color: white;">Kontakt</span></a></li>
+            </ul>
+        </div>
+    </nav>
+    <nav id="hamburger-nav">
+        <div class="logo"><span style="color: white;">Martin Schneider</span></div>
+        <div class="hamburger-menu">
+            <div class="hamburger-icon" onclick="hamburgerMenu()">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+            <div class="menu-links">
+                <li><a href="#about" onclick="hamburgerMenu()"><span style="color: white;">O mnie</span></a></li>
+                <li><a href="#experience" onclick="hamburgerMenu()"><span style="color: white;">Doświadczenie</span></a></li>
+                <li><a href="#projects" onclick="hamburgerMenu()"><span style="color: white;">Projekty</span></a></li>
+                <li><a href="#contact" onclick="hamburgerMenu()"><span style="color: white;">Kontakt</span></a></li>
+            </div>
+        </div>
+    </nav>
+
+    <section id="profile">
+        <div class="section__pic-container">
+            <img src="./assets/zdjecie3.png" alt="Martin Schneider - zdjęcie">
+        </div>
+        <div class="section__text">
+            <p class="section__text__p1"><span style="color: rgb(224, 224, 222); letter-spacing: 4px; font-size: 20px;">Cześć, jestem</span></p>
+            <h1 class="title"><span style="color: white;">Martin Schneider</span></h1>
+            <p class="section__text__p2"><span style="color: rgb(212, 212, 209);">Frontend Developer</span></p>
+            <div class="btn-container">
+                <button class="btn btn-color-2" onclick="window.open('./assets/CV.pdf')">Sprawdź CV!</button>
+                <button class="btn btn-color-1" onclick="location.href='#contact'">Kontakt!</button>
+            </div>
+            <div id="socials-container">
+                <img src="./assets/instagram.png" alt="Profil Linkedin" class="icon" onclick="location.href='https://www.instagram.com/5art1n.s/'">
+                <img src="./assets/github.png" alt="Profil Github" class="icon" onclick="location.href='https://github.com/Martini2316'">
+            </div>
+        </div>
+    </section>
+    <section id="about">
+        <p class="section__text__p1"><span style="color: rgb(218, 218, 215);">Informacje</span></p>
+        <h1 class="title"><span style="color: white;">O Mnie</span></h1>
+        <div class="section-container">
+            <div class="section__pic-container">
+                <img src="./assets/trabka2.jpg" alt="Profilowe" class="about-pic">
+            </div>
+            <div class="about-details-container">
+
+                <div class="about-containers">
+                    <div class="details-container">
+                        <img src="./assets/experience.png" alt="Ikona Doswiadczenia" class="icon">
+                        <h3>Doświadczenie</h3>
+                        <p>3+ lata programując:<br> Strony internetowe: HTML, CSS, JS <br> Gry: JS, C#, C++, GDScript</p>
+                    </div>
+                    <div class="details-container">
+                        <img src="./assets/education.png" alt="Ikona Edukacja" class="icon">
+                        <h3>Edukacja</h3>
+                        <p>Wykształcenie Średnie<br>Aktualnie Student na kierunku: Informatyka </p>
+                    </div>
+                </div>
+                <div class="text-container">
+                    <p><span style="color: white;">Cześć, jestem Martin. Zajmuję się głównie programowaniem stron internetowych oraz gier webowych, jednak moje zainteresowania sięgają znacznie dalej. Interesuję się też elektroniką, mechaniką, robotyką i stawiam pierwsze kroki bawiąc się arduino.<br><br>
+
+                    Studiuję informatykę, ale od ponad 3 lat poszerzam swoją wiedzę i umiejętności w programowaniu, dzięki czemu mogę wprowadzać innowacyjne rozwiązania w praktyce.<br><br> 
+
+                    Nie tylko programuje! Jestem trębaczem w orkiestrze oraz w wolnych chwilach zajmuję się projektowaniem amatorskich rakiet. Moje hobby nawiązuje do zaawansowanych projektów SpaceX, gdzie fascynuje mnie technologia która pozwoliła na powrót Boosterów z powrotem na wyznaczone do lądowania miejsce.<br><br>
+                    
+                    Chwaląc się, jestem zwycięzcą GameJam'u, gdzie zaprogramowałem grę w języku JavaScript i pokonałem inne drużyny, które liczyły 2-4 osoby. To doświadczenie dodatkowo umocniło moją pasję do programowania i udowodniło, że potrafię tworzyć wyjątkowe rozwiązania nawet w intensywnych konkurencyjnych warunkach.</span></p>
+                </div>
+            </div>
+        </div>
+        <img src="./assets/arrow.png" alt="Ikona Strzałki" class="icon arrow" onclick="location.href='#experience'">
+    </section>
+    <section id="experience">
+        <p class="section__text__p1"><span style="color: rgb(218, 218, 215);">Moje</span></p>
+        <h1 class="title"><span style="color: white;">Umiejętności</span></h1>
+        <div class="experience-details-container">
+            <div class="about-containers">
+                <div class="details-container">
+                    <h2 class="experience-sub-title">Frontend Development</h2>
+                    <div class="article-container">
+                        <article>
+                            <img src="./assets/checkmark.png" alt="Ikona Doswiadczenia" class="icon">
+                            <div>
+                                <h3>HTML</h3>
+                                <p>Zaawansowany</p>
+                            </div>
+                        </article>
+                        <article>
+                            <img src="./assets/checkmark.png" alt="Ikona Doswiadczenia" class="icon">
+                            <div>
+                                <h3>CSS</h3>
+                                <p>Średnio zaawansowany</p>
+                            </div>
+                        </article>
+                        <article>
+                            <img src="./assets/checkmark.png" alt="Ikona Doswiadczenia" class="icon">
+                            <div>
+                                <h3>JavaScript</h3>
+                                <p>Zaawansowany</p>
+                            </div>
+                        </article>
+                        <article>
+                            <img src="./assets/checkmark.png" alt="Ikona Doswiadczenia" class="icon">
+                            <div>
+                                <h3>React.js</h3>
+                                <p>Podstawy</p>
+                            </div>
+                        </article>
+                        <article>
+                            <img src="./assets/checkmark.png" alt="Ikona Doswiadczenia" class="icon">
+                            <div>
+                                <h3>UI/UX</h3>
+                                <p>Podstawy</p>
+                            </div>
+                        </article>
+                        <article>
+                            <img src="./assets/checkmark.png" alt="Ikona Doswiadczenia" class="icon">
+                            <div>
+                                <h3>TypeScrpt</h3>
+                                <p>Średnio zaawansowany</p>
+                            </div>
+                        </article>
+                        <article>
+                            <img src="./assets/checkmark.png" alt="Ikona Doswiadczenia" class="icon">
+                            <div>
+                                <h3>Angular.js</h3>
+                                <p>Podstawy</p>
+                            </div>
+                        </article>
+                        <article>
+                            <img src="./assets/checkmark.png" alt="Ikona Doswiadczenia" class="icon">
+                            <div>
+                                <h3>Vue.js</h3>
+                                <p>Podstawy</p>
+                            </div>
+                        </article>
+                        <article>
+                            <img src="./assets/checkmark.png" alt="Ikona Doswiadczenia" class="icon">
+                            <div>
+                                <h3>THREE.JS</h3>
+                                <p>Podstawy</p>
+                            </div>
+                        </article>
+                    </div>
+                </div>
+                <div class="details-container">
+                    <h2 class="experience-sub-title">Backend Development</h2>
+                    <div class="article-container">
+                        <article>
+                            <img src="./assets/checkmark.png" alt="Ikona Doswiadczenia" class="icon">
+                            <div>
+                                <h3>PHP</h3>
+                                <p>Podstawy</p>
+                            </div>
+                        </article>
+                        <article>
+                            <img src="./assets/checkmark.png" alt="Ikona Doswiadczenia" class="icon">
+                            <div>
+                                <h3>SQL</h3>
+                                <p>Podstawy</p>
+                            </div>
+                        </article>
+                        <article>
+                            <img src="./assets/checkmark.png" alt="Ikona Doswiadczenia" class="icon">
+                            <div>
+                                <h3>Git</h3>
+                                <p>Podstawy</p>
+                            </div>
+                        </article>
+                        <article>
+                            <img src="./assets/checkmark.png" alt="Ikona Doswiadczenia" class="icon">
+                            <div>
+                                <h3>Node.js</h3>
+                                <p>Podstawy</p>
+                            </div>
+                        </article>
+                    </div>
+                </div>
+                <div class="details-container">
+                    <h2 class="experience-sub-title">Game Development</h2>
+                    <div class="article-container">
+                        <article>
+                            <img src="./assets/checkmark.png" alt="Ikona Doswiadczenia" class="icon">
+                            <div>
+                                <h3>JavaScript - 2D canvas</h3>
+                                <p>Zaawansowany</p>
+                            </div>
+                        </article>
+                        <article>
+                            <img src="./assets/checkmark.png" alt="Ikona Doswiadczenia" class="icon">
+                            <div>
+                                <h3>C#</h3>
+                                <p>Ponadpodstawowy</p>
+                            </div>
+                        </article>
+                        <article>
+                            <img src="./assets/checkmark.png" alt="Ikona Doswiadczenia" class="icon">
+                            <div>
+                                <h3>C++</h3>
+                                <p>Podstawy</p>
+                            </div>
+                        </article>
+                        <article>
+                            <img src="./assets/checkmark.png" alt="Ikona Doswiadczenia" class="icon">
+                            <div>
+                                <h3>GDScript</h3>
+                                <p>Ponadpodstawowy</p>
+                            </div>
+                        </article>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <img src="./assets/arrow.png" alt="Ikona Strzałki" class="icon arrow" onclick="location.href='#projects'">
+    </section>
+    <section id="projects">
+        <p class="section__text__p1"><span style="color: rgb(225, 225, 222);">Sprawdź moje wyróżnione</span></p>
+        <h1 class="title"><span style="color: white;">Projekty</span></h1>
+        <div class="exeperience-details-container">
+            <div class="about-containers">
+                <div class="details-container color-container">
+                <div class="article-container">
+                    <img src="./assets/Pogoda.png" alt="Projekt 1" class="project-img">
+                </div>
+                <h2 class="experience-sub-title project-tile"><span style="color: white;">Aplikacja Pogodowa</span></h2>
+                <div class="btn-container">
+                    <button class="projectBTN" onclick="location.href='https://martini2316.github.io/Pogoda/'">
+                        Sprawdź Stronę
+                    </button>
+                    <button class="projectBTN" onclick="location.href='https://github.com/Martini2316/Pogoda'">
+                        Github
+                    </button>
+                </div>
+                </div>
+                <div class="details-container color-container">
+                <div class="article-container">
+                    <img src="./assets/qrcodegen.png" alt="Projekt 2" class="project-img">
+                </div>
+                <h2 class="experience-sub-title project-tile"><span style="color: white;">Generator kodu QR</span></h2>
+                <div class="btn-container">
+                    <button class="projectBTN" onclick="location.href='https://martini2316.github.io/qrcodereader/'">
+                        Sprawdź Stronę
+                    </button>
+                    <button class="projectBTN" onclick="location.href='https://github.com/Martini2316/qrcodereader'">
+                        Github
+                    </button>
+                </div>
+                </div>
+                <div class="details-container color-container">
+                <div class="article-container">
+                    <img src="./assets/guessnum.png" alt="Projekt 3" class="project-img">
+                </div>
+                <h2 class="experience-sub-title project-tile"><span style="color: white;">Zgadnij liczbę</span></h2>
+                <div class="btn-container">
+                    <button class="projectBTN" onclick="location.href='https://martini2316.github.io/guessNumber/'">
+                        Sprawdź Stronę
+                    </button>
+                    <button class="projectBTN-2" onclick="location.href='./Projects/other.html'">
+                        <span style=" color: white;">Sprawdź inne projekty</span>
+                    </button>
+                </div>
+                </div>
+            </div>
+        </div>
+        <img src="./assets/arrow.png" alt="Ikona Strzałki" class="icon arrow" onclick="location.href='#contact'">
+    </section>
+    <section id="contact">
+                            <!-- <span style="color: rgb(232, 232, 73);"></span> -->
+    <!-- <span style="color: rgb(171, 171, 169);"></span> -->
+        <p class="section__text__p1"><span style="color: rgb(225, 225, 222);">Napisz do mnie</span></p>
+        <h1 class="title"><span style="color: white;">Kontakt</span></h1>
+        <div class="contact-info-upper-container">
+            <div class="contact-info-container">
+                <img src="./assets/email.png" alt="Ikona email" class="icon contact-icon email-icon">
+                <p><span style="color: rgb(171, 171, 169);"><a href="mailto:smartin1623@gmail.com"><span style="color: white;">smartin1623@gmail.com</span></a></span></p>
+            </div>
+            <div class="contact-info-container">
+                <img src="./assets/instagram.png" alt="Ikona instagrama" class="icon contact-icon">
+                <p><a href="https://www.instagram.com/5art1n.s/"><span style="color: white;">Instagram</span></a></p>
+            </div>
+        </div>
+    </section>
+    <footer>
+        <nav>
+            <div class="nav-links-container">
+                <ul class="nav-links">
+                    <li><a href="#about"><span style="color: white;">O mnie</span></a></li>
+                    <li><a href="#experience"><span style="color: white;">Doświadczenie</span></a></li>
+                    <li><a href="#projects"><span style="color: white;">Projekty</span></a></li>
+                    <li><a href="#contact"><span style="color: white;">Kontakt</span></a></li>
+                </ul>
+            </div>
+        </nav>
+        <p><span style="color: white;">Copyright &#169; 2023 Martin Schneider. Wszelkie prawa zastrzeżone</span></p>
+    </footer>
+    <script src="index.js"></script>
+</body>
+</html>
